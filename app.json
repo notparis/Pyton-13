@@ -1,0 +1,41 @@
+{
+  "name": "TikTok Bot",
+  "description": "📍Bot For Tiktok Download - Available Format ( Mp3 File , Video )",
+  "keywords": [
+    "telegram",
+    "تيكتوك",
+    "video",
+    "tiktok"
+  ],
+  "success_url": "https://T.me/removv",
+  "website": "https://github.com/notparis",
+  "repository": "https://github.com/notparis/Pyton-13/",
+  "env": {
+    "BOT_TOKEN": {
+      "description": " Bot Token ",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": " App Id ",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "App Hash",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "stack": "heroku-20",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
